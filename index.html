@@ -5,12 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
+    <!-- Tailwind CSS and daisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font - Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e105818136.js" crossorigin="anonymous"></script>
+
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-    
+<body class="font-lato">
+    <header class="container mx-auto">
+        <nav class="my-14">
+            <div class="navbar bg-[#F85559] lg:px-12 py-9 rounded-[600px] flex justify-between">
+                <div>
+                    <ul class="flex gap-7 text-white">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">All Fruits</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="btn btn-ghost normal-case text-xl text-white"><img src="images/logo.png" alt="">Fruit
+                        Burst</a>
+                </div>
+                <div>
+                    <div class="form-control">
+                        <label for="">
+                            <input type="text" placeholder="Search here..."
+                                class="input input-bordered w-24 md:w-auto z-10"/>
+                                <i class="fa-solid fa-magnifying-glass -ml-7 z-20"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
 
 </html>
